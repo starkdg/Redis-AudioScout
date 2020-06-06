@@ -2,6 +2,7 @@
 
 Redis module for audio track recognition.  This module provides command
 extensions for the fast indexing and matching of audio fingerprints.
+The recognition is robust to distortion.
 
 ## How It Works
 
