@@ -43,12 +43,12 @@ Args ParseOptions(int argc, char **argv){
 			("server,s", po::value<string>(&args.host)->default_value("localhost"),
 			   "redis server hostname or unix domain socket path - e.g. localhost or 127.0.0.1")
 			("port,p", po::value<int>(&args.port)->default_value(6379), "redis server port")
-			("toggles,t", po::value<int>(&args.t)->default_value(4), "query parameter - 0 to 8")
-			("sr", po::value<int>(&args.sr)->default_value(8000), "sample rate - e.g. 8000")
+			("toggles,g", po::value<int>(&args.t)->default_value(4), "query parameter - 0 to 8")
+			("sr", po::value<int>(&args.sr)->default_value(6000), "sample rate - e.g. 6000")
 			("nsecs,n", po::value<int>(&args.n_secs)->default_value(0),
 			 "number seconds to process from  each file - deafult value 0 for whole file")
-			("threshold", po::value<float>(&args.threshold)->default_value(0.25),
-			 "query threshold - e.g. 0.25 (0,1.0)")
+			("threshold,t", po::value<float>(&args.threshold)->default_value(0.25),
+			 "query threshold - e.g. 0.10 (0,1.0)")
 			("id,i", po::value<long long>(&args.id_value), "id value for delete");
 			
 		po::positional_options_description pd;
