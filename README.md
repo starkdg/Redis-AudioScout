@@ -55,7 +55,7 @@ The id is its assigned integer id.  The position is an integer offset denoting
 the starting position in the matched fingerprint.  There is a function in the
 audiohash library to convert the position into number of seconds.
 
-Complexity is O(N + 2^P), where N is the length of the hasharray, and P is
+Complexity is O(N*2^P), where N is the length of the hasharray, and P is
 the number of toggles, or set bit positions in the toggle array.  Each toggle
 array element will have the same number of set bit positions.
 
