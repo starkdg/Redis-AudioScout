@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(RedisAudioscout VERSION 0.0.0 DESCRIPTION "phash audio index")
 include(ExternalProject)
 
-set(MODULE_SRCS auscout_redis.cpp)
+set(MODULE_SRCS module.cpp)
 set(CMAKE_INSTALL_PREFIX /var/local)
 
 set(CMAKE_BUILD_TYPE DEBUG)
