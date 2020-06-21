@@ -398,7 +398,7 @@ extern "C" void ASIndexTypeAofRewrite(RedisModuleIO *aof, RedisModuleString *key
 		Entry *entry = list->head;
 		int64_t id = entry->id;
 		while (entry != NULL){
-			hashesforid.push_back(entry->hash_value);
+			hashesforid.push_back(htonl(entry->hash_value));
 			entry->succ;
 		}
 		
