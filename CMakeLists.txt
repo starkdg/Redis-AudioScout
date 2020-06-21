@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(RedisAudioscout VERSION 0.0.0 DESCRIPTION "phash audio index")
+project(RedisAudioscout VERSION 0.1.0 DESCRIPTION "phash audio index")
 include(ExternalProject)
 
 set(MODULE_SRCS module.cpp)
