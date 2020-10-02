@@ -4,7 +4,6 @@ project(RedisAudioscout VERSION 0.1.0 DESCRIPTION "phash audio index")
 include(ExternalProject)
 
 set(MODULE_SRCS module.cpp)
-set(CMAKE_INSTALL_PREFIX /var/local)
 
 set(CMAKE_BUILD_TYPE RelWithDebInfo)
 

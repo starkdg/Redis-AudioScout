@@ -140,7 +140,14 @@ libpHashAudio provides the functions to calculate the audio fingerprints.
 
 ## Installation Instructions
 
-Compile the source:
+Build and run the server from Docker:
+
+```
+docker build --tag auscout:0.1 .
+docker run --detach --publish 6379:6379 --mount src=auscoutdata,dst=/data --name auscout auscout:0.1
+```
+
+Compile from source:
 
 
 ```
@@ -149,7 +156,9 @@ make all
 make install
 ```
 
-Installs to local /var/local/lib directory
+This compiles the client demo program.
+
+Installs to local /usr/local/lib directory
 
 Load the module:
 
